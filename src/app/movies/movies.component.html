@@ -1,0 +1,25 @@
+<p>movies works!</p>
+
+<!-- <div class="btn btn-primary" (click) ="getSingleMovie()">Get Movies</div> -->
+<div class="btn btn-primary" (click)="getSingleMovie()"> Get Single Movie</div>
+
+<div class="btn btn-primary" (click)="getPopularMovies()"> Get Popular Movies</div>
+
+<div class="btn btn-primary" (click)="login()"> Login </div>
+
+<div class="btn btn-primary" (click)="gotohome()"> Home </div>
+
+
+
+
+<h1>
+    {{moviename}}
+</h1>
+
+<img [src]="imgurl" alt="">
+
+<div *ngFor = "let movie of popularMovies; let i = index">
+    <h1>
+        {{movie['original_title']}}
+    </h1>
+</div>
